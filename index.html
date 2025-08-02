@@ -15,6 +15,46 @@
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
 </head>
 <body>
+        <!-- Данные карточек - РЕДАКТИРОВАТЬ ЗДЕСЬ ДЛЯ ДОБАВЛЕНИЯ НОВЫХ КАРТОЧЕК -->
+    <div id="cards-data" style="display: none;">
+        <card-data 
+            data-title="Уютная беседка"
+            data-short="Просторная беседка для отдыха на свежем воздухе"
+            data-main-image="/images/besedka/besedka1.jpg"
+            data-images="/images/besedka/besedka1.jpg,/images/besedka/besedka2.jpg,/images/besedka/besedka3.jpg"
+            data-long="Просторная деревянная беседка на 10-12 человек, оборудованная столами и скамейками. Идеальное место для семейных обедов, игр и вечерних посиделок. Беседка защищена от дождя и ветра, имеет хорошее освещение. Рядом расположена зона для барбекю и мангала. В беседке есть розетки для подключения электроприборов.">
+        </card-data>
+        
+        <card-data 
+            data-title="Зона барбекю"
+            data-short="Оборудованная площадка для приготовления шашлыков"
+            data-main-image="/images/barbeku/barbeku1.jpg"
+            data-images="/images/barbeku/barbeku1.jpg,/images/barbeku/barbeku2.jpg"
+            data-long="Специально оборудованная зона для приготовления пищи на открытом огне. В наличии: стационарный мангал, решетки для гриля, столы для разделки продуктов. Рядом расположены мойка с проточной водой и место для хранения дров. Зона безопасна и соответствует всем противопожарным требованиям.">
+        </card-data>
+        
+        <card-data 
+            data-title="Детская площадка"
+            data-short="Безопасная игровая зона для детей разных возрастов"
+            data-main-image="/images/detskaya/detskaya1.jpg"
+            data-images="/images/detskaya/detskaya1.jpg,/images/detskaya/detskaya2.jpg,/images/detskaya/detskaya3.jpg"
+            data-long="Современная детская площадка с качелями, горками, песочницей и спортивными снарядами. Все оборудование изготовлено из экологически чистых материалов и регулярно проходит проверку безопасности. Площадка огорожена и имеет мягкое покрытие. Рядом установлены скамейки для родителей.">
+        </card-data>
+        
+        <card-data 
+            data-title="Парковка"
+            data-short="Удобная парковочная зона для автомобилей гостей"
+            data-main-image="/images/parkovka/parkovka1.jpg"
+            data-images="/images/parkovka/parkovka1.jpg,/images/parkovka/parkovka2.jpg"
+            data-long="Просторная парковочная зона на 8-10 автомобилей. Парковка имеет твердое покрытие, хорошо освещается в темное время суток. Въезд и выезд удобные, есть место для разворота. Парковочные места размечены, территория охраняется. Рядом с парковкой расположена основная тропинка к зоне отдыха.">
+        </card-data>
+    </div>
+
+    <div id="root"></div>
+    
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="app.js"></script>
     <div id="root"></div>
     <!-- Adding cache-busting query param to ensure the latest JS is fetched -->
     <script type="text/babel" src="app.js?v=3"></script>
